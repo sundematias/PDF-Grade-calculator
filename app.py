@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import pdfplumber
 
 st.markdown("""
         <style>
@@ -13,15 +14,10 @@ st.markdown("""
         </style>
         """, unsafe_allow_html=True)
 
-import pdfplumber
 
 st.title("PDF Grade Calculator")
-# st.text("This is a quick website to calculate your average grade. \nIt's not difficult to do manually, but it's tedious work!")
-# st.text("The official reciepe to calculate grades can be found at ")
 st.markdown("This website calculates the average grade from any Vitnemålsportalen grade transcript PDF, so you don't have to do it by hand:)" )
 
-
-# st.markdown("The official reciepe to calculate grades can be found at ")
 st.header("How to use")
 st.markdown(
     "The PDF format required is from [Vitnemålsportalen](%s). *Do not use the grade preview, but the proper PDF!*"
@@ -80,10 +76,9 @@ if uploaded_file:
 
             # Add course info to the dataframe
             df.loc[df.shape[0]] = [code, letter_grade, grade, course_credits]
+            
     # We must convert the credits from 7,5 to 7.5
-
     course_credits_values = np.array(df["Course credits"].values)
-
     # ugly, but does the job
     for i in range(len(course_credits_values)):
         course_credits_values[i] = float(
@@ -129,8 +124,6 @@ if uploaded_file:
     st.markdown("*Hover over the data to get a fullscreen button*")
     st.text("")
 
-
-# st.markdown("If you liked this page and want to say thanks, my Vipps is 41303423 :)")
 
 #st.header("About")
 # st.markdown("""---""") 
