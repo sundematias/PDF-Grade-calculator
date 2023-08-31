@@ -110,13 +110,14 @@ if uploaded_file:
     st.markdown(
         "* Check that unusual courses such as HMS0001 has no credits and no grade"
     )
-    st.markdown(" ###### Hover over the data to get a fullscreen button")
     st.dataframe(
         df[["Course code", "Letter grade", "Number grade", "Course credits"]],
         800,
         200,
         hide_index=True,
     )
+    st.markdown("*Hover over the data to get a fullscreen button*")
+
 
 # st.markdown("If you liked this page and want to say thanks, my Vipps is 41303423 :)")
 
