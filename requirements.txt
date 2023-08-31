@@ -1,1 +1,1 @@
-pdfplumber
+pdfplumber==0.10.2
