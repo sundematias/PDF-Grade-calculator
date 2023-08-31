@@ -13,7 +13,7 @@ st.title("NTNU grade calculator from PDF")
 
 st.markdown(
     """
-            This is a quick website to calculate your average grade from your grade transcript PDF, so you don't have to do it by hand.
+            This is a app to calculate the average grade NTNU's grade transcript PDF's, so you don't have to do it by hand.
             Note that the PDF parsing is not super robust, as NTNU's course code system is surprisingly inconsistent. If you find any issues, send an email to gradecalculatorntnu@gmail.com
             """
 )
@@ -31,7 +31,11 @@ st.markdown(
     "*Do not use the grade previews!* The correct way to get the PDF from vitnemålsportalen is the following: "
 )
 st.markdown(
-    "Log in, click on *my results*, select the courses you want to calculate the average of, click next **twice** (do not download the preview here!), fill in your email, and select norwegian/english (both are fine). Finally, follow the link sent to your email and download the PDF at the bottom of the page."
+    """Log in, click on *my results*, select the courses you want to calculate the average of, click next
+    **twice** (do not download the preview here!), fill in your email, and select norwegian/english (both are fine).
+    Finally, follow the link sent to your email and scroll past all your grades to the bottom, where you can
+    download the PDF.
+    """
 )
 
 uploaded_file = st.file_uploader("Upload your pdf file here")
@@ -43,7 +47,7 @@ if uploaded_file:
         for page in pdf.pages:
             text_data += page.extract_text()
     # df to be filled in later
-    columns = ["Course code", "Letter grade", "Grade", "Course credits"]
+    columns = ["Course code", "Letter grade", "Number grade", "Course credits"]
     df = pd.DataFrame(columns=columns)
 
     lines = text_data.split("\n")
