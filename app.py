@@ -139,6 +139,5 @@ st.markdown(
     % "https://i.ntnu.no/wiki/-/wiki/Norsk/FS+-+Beregne+snittkarakter"
 )
 
-st.markdown("This page is not ")
+st.markdown("This page is not affiliated with NTNU or Vitnemålsportalen. Source code is available in [github](%s) " % "https://github.com/sundematias/sundematias.github.io")
 
-st.footer("This page is not ")
