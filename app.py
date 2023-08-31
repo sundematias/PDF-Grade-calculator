@@ -32,7 +32,8 @@ st.markdown(
     "*Do not use the grade previews!* The correct way to get the PDF from vitnemålsportalen is the following: "
 )
 st.markdown(
-    """Log in,
+    """
+    *Log in,
     * click on *my results*, 
     * select the courses you want to calculate the average of,
     * click next **twice** (do not download the preview here!), 
