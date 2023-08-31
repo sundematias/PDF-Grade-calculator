@@ -131,7 +131,9 @@ if uploaded_file:
 # st.markdown("If you liked this page and want to say thanks, my Vipps is 41303423 :)")
 
 #st.header("About")
-st.markdown("""---""") 
+# st.markdown("""---""") 
+components.html("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """)
+
 st.markdown(
     """
             This page was originally made for NTNU transcripts. It appears to work for other universities as well, but the PDF parsing has not been tested thoroughly.
