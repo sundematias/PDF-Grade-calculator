@@ -1,3 +1,4 @@
-name: testenv
+name: stats2
 
-pip: -pdfplumber
+dependencies:
+  - pdfplumber=0.10.2

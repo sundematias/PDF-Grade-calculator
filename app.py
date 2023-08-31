@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-import sklearn
+# import sklearn
 
 
 import pdfplumber
@@ -18,7 +18,7 @@ st.markdown(
             """
 )
 st.markdown(
-    "NTNU's official procedure for grade calculations can be found [here](%s). This website uses one more decimal than what's used when applying to master's degrees." 
+    "NTNU's official procedure for grade calculations can be found [here](%s). This website uses one more decimal than what's used when applying to master's degrees."
     % "https://i.ntnu.no/wiki/-/wiki/Norsk/FS+-+Beregne+snittkarakter"
 )
 # st.markdown("The official reciepe to calculate grades can be found at ")
