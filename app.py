@@ -113,7 +113,7 @@ if uploaded_file:
     st.dataframe(
         df[["Course code", "Letter grade", "Number grade", "Course credits"]],
         800,
-        1500,
+        800,
         hide_index=True,
     )
 
