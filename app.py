@@ -92,13 +92,13 @@ if uploaded_file:
 
     # We have to ignore the course credits corresponding to course without letter grade when calculating a weighted average
     Total_credits_in_courses_with_grade = (
-        df["course_values"].sum() - df[df["Grade"].isna()]["course_values"].sum()
+        df["course_values"].sum() - df[df["Number grade"].isna()]["course_values"].sum()
     )
 
     # Calculate weighted average. This is done by multiplying the grade by the credits, dividing by all the relevant credits.
     # Note that pandas df will automatically consider NaNs as 0 when summing, which makes the numerator nice.
     # The reason why the denominator needs the ugly solution is because there exist courses with credits and no grade, which are not removed by being multiplied by a nan (such as in the denominator)
-    avg_grade = (df["course_values"] * df["Grade"]).sum() / (
+    avg_grade = (df["course_values"] * df["Number grade"]).sum() / (
         Total_credits_in_courses_with_grade
     )
 
@@ -108,7 +108,7 @@ if uploaded_file:
         f"Your course credit weighted average grade is {avg_grade:.2f}. This is the one you report."
     )
 
-    unweighted_average = df["Grade"].mean()
+    unweighted_average = df["Number grade"].mean()
     st.markdown(
         f"Your unweighted average grade is {unweighted_average:.2f}. This number should not be presented as your average grade, as it's just the average of all your grades, regardless of how many credits the course gives. If all your courses are 7.5 credits, the number is identical."
     )
@@ -127,7 +127,7 @@ if uploaded_file:
         "* Check that unusual courses such as HMS0001 has no credits and no grade"
     )
     st.dataframe(
-        df[["Course code", "Letter grade", "Grade", "Course credits"]],
+        df[["Course code", "Letter grade", "Number grade", "Course credits"]],
         800,
         1500,
         hide_index=True,
