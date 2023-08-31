@@ -1,4 +1,0 @@
-name: stats2
-
-dependencies:
-  - pdfplumber=0.10.2
