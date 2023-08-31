@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pdfplumber
+import sklearn
 
 st.title("NTNU grade calculator from PDF")
 # st.text("This is a quick website to calculate your average grade. \nIt's not difficult to do manually, but it's tedious work!")
