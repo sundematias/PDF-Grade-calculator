@@ -98,7 +98,7 @@ if uploaded_file:
     
     st.header("Verifying your results")
     st.markdown(
-        "To be sure that the results are reliable, you can check that the PDF was parsed correctly. You can do this by:"
+        "To be sure that the average is correct, you can do some checks to verify that the PDF was parsed correctly:"
     )
     st.markdown(
         f"* Check that you have **{df.shape[0]}** courses on your original transcript"
