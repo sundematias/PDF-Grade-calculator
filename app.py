@@ -96,7 +96,7 @@ if uploaded_file:
     st.markdown(f" ### Average grade: {avg_grade:.2f}")
     unweighted_average = df["Number grade"].mean()
     
-    st.header("Verifying your results")
+    st.header("Verifying the number")
     st.markdown(
         "To be sure that the average is correct, you can do some checks to verify that the PDF was parsed correctly:"
     )
