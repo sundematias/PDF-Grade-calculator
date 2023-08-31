@@ -110,6 +110,7 @@ if uploaded_file:
     st.markdown(
         "* Check that unusual courses such as HMS0001 has no credits and no grade"
     )
+    st.markdown("Click the fullscreen button to view the whole dataset")
     st.dataframe(
         df[["Course code", "Letter grade", "Number grade", "Course credits"]],
         800,
