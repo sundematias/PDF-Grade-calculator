@@ -29,17 +29,19 @@ st.markdown(
     % "https://www.vitnemalsportalen.no/"
 )
 st.markdown(
-    "*Do not use the grade previews!* The correct way to get the PDF from vitnemålsportalen is the following: "
+    "*Do not use the grade preview!* The correct way to get the PDF from vitnemålsportalen is the following: "
 )
 st.markdown(
     """
     * Log in,
-    * click on *my results*, 
-    * select the courses you want to calculate the average of,
-    * click next **twice** (do not download the preview here!), 
-    * fill in your email, and select norwegian/english (both are fine)
-    * follow the link sent to your email and scroll past all your grades to the bottom, 
-    where you can download the PDF.
+    * Click on my results, 
+    * Select the courses you want to calculate the average of,
+    * Click next **twice** (do not download the preview here!), 
+    * Fill in your email, and select norwegian/english (both are fine), then click next
+    * Click on the link sent to your email 
+    * Scroll past all your grades to the bottom
+    * where you can download the PDF
+    * Upload the pdf to this page :) 
     """
 )
 
