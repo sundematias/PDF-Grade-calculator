@@ -98,7 +98,7 @@ if uploaded_file:
     
     st.header("Verifying your results")
     st.markdown(
-        "To be sure that the results are reliable, you can check that the PDF was parsed correctly. The following dataframe was extracted from the uploaded PDF."
+        "To be sure that the results are reliable, you can check that the PDF was parsed correctly. The following data was extracted from the uploaded PDF."
     )
     st.markdown(
         f"* Check that you have **{df.shape[0]}** courses on your original transcript"
@@ -128,11 +128,9 @@ st.markdown(
 )
 
 st.markdown(
-    "NTNU's official procedure for grade calculations can be found [here](%s). When applying to master's degrees, only one decimal is used. This page calculates two decimals for convenience."
+    "NTNU's official procedure for grade calculations can be found [here](%s). When applying to master's degrees, only one decimal is used. This page calculates two decimals for convenience. The average is weighted by course credits."
     % "https://i.ntnu.no/wiki/-/wiki/Norsk/FS+-+Beregne+snittkarakter"
 )
-st.markdown("The calculation is course credit weighted, in the same way NTNU does it.")
-
 
 st.markdown("This page is not affiliated with NTNU or Vitnemålsportalen. The source code is available on [GitHub](%s). " % "https://github.com/sundematias/sundematias.github.io")
 
