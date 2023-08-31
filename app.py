@@ -5,10 +5,10 @@ import pandas as pd
 st.markdown("""
         <style>
                .block-container {
-                    padding-top: 1rem;
+                    padding-top: 0rem;
                     padding-bottom: 0rem;
-                    padding-left: 5rem;
-                    padding-right: 5rem;
+                    padding-left: 10rem;
+                    padding-right: 10rem;
                 }
         </style>
         """, unsafe_allow_html=True)
