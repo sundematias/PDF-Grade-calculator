@@ -13,12 +13,13 @@ st.title("NTNU grade calculator from PDF")
 
 st.markdown(
     """
-            This is a app to calculate the average grade NTNU's grade transcript PDF's, so you don't have to do it by hand.
-            Note that the PDF parsing is not super robust, as NTNU's course code system is surprisingly inconsistent. If you find any issues, send an email to gradecalculatorntnu@gmail.com
+            This is a website that calculates the average grade for any transcript PDF from Vitnemålsportalen, so you don't have to do it by hand.
+            It was originally made for NTNU transcripts. It appears to work for other universities as well, but the PDF parsing has not been tested thoroughly.
+            If you find any issues, please send an email to gradecalculatorntnu@gmail.com
             """
 )
 st.markdown(
-    "NTNU's official procedure for grade calculations can be found [here](%s). This website uses one more decimal than what's used when applying to master's degrees."
+    "NTNU's official procedure for grade calculations can be found [here](%s). When applying to master's degrees, only one decimal is used."
     % "https://i.ntnu.no/wiki/-/wiki/Norsk/FS+-+Beregne+snittkarakter"
 )
 # st.markdown("The official reciepe to calculate grades can be found at ")
@@ -31,10 +32,13 @@ st.markdown(
     "*Do not use the grade previews!* The correct way to get the PDF from vitnemålsportalen is the following: "
 )
 st.markdown(
-    """Log in, click on *my results*, select the courses you want to calculate the average of, click next
-    **twice** (do not download the preview here!), fill in your email, and select norwegian/english (both are fine).
-    Finally, follow the link sent to your email and scroll past all your grades to the bottom, where you can
-    download the PDF.
+    """Log in,
+    * click on *my results*, 
+    * select the courses you want to calculate the average of,
+    * click next **twice** (do not download the preview here!), 
+    * fill in your email, and select norwegian/english (both are fine)
+    * follow the link sent to your email and scroll past all your grades to the bottom, 
+    where you can download the PDF.
     """
 )
 
