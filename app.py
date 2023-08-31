@@ -13,7 +13,7 @@ st.title("NTNU grade calculator from PDF")
 
 st.markdown(
     """
-            This is a website that calculates the average grade for any transcript PDF from Vitnemålsportalen, so you don't have to do it by hand.
+            This website calculates the average grade from any Vitnemålsportalen grade transcript PDF, so you don't have to do it by hand:)
             It was originally made for NTNU transcripts. It appears to work for other universities as well, but the PDF parsing has not been tested thoroughly.
             If you find any issues, please send an email to gradecalculatorntnu@gmail.com
             """
