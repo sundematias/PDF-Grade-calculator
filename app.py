@@ -12,10 +12,7 @@ st.title("PDF Grade Calculator")
 # st.text("The official reciepe to calculate grades can be found at ")
 st.markdown("This website calculates the average grade from any Vitnemålsportalen grade transcript PDF, so you don't have to do it by hand:)" )
 
-st.markdown(
-    "NTNU's official procedure for grade calculations can be found [here](%s). When applying to master's degrees, only one decimal is used. This page calculates two decimals for convenience."
-    % "https://i.ntnu.no/wiki/-/wiki/Norsk/FS+-+Beregne+snittkarakter"
-)
+
 # st.markdown("The official reciepe to calculate grades can be found at ")
 st.header("How to use")
 st.markdown(
@@ -128,9 +125,17 @@ if uploaded_file:
     )
 
 # st.markdown("If you liked this page and want to say thanks, my Vipps is 41303423 :)")
+
+
 st.markdown(
     """
             This page was originally made for NTNU transcripts. It appears to work for other universities as well, but the PDF parsing has not been tested thoroughly.
             If you find any issues, please send an email to gradecalculatorntnu@gmail.com
             """
 )
+
+st.markdown(
+    "NTNU's official procedure for grade calculations can be found [here](%s). When applying to master's degrees, only one decimal is used. This page calculates two decimals for convenience."
+    % "https://i.ntnu.no/wiki/-/wiki/Norsk/FS+-+Beregne+snittkarakter"
+)
+
