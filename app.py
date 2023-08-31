@@ -7,7 +7,7 @@ import pandas as pd
 
 import pdfplumber
 
-st.header("PDF Grade Calculator")
+st.title("PDF Grade Calculator")
 # st.text("This is a quick website to calculate your average grade. \nIt's not difficult to do manually, but it's tedious work!")
 # st.text("The official reciepe to calculate grades can be found at ")
 st.markdown("This website calculates the average grade from any Vitnemålsportalen grade transcript PDF, so you don't have to do it by hand:)" )
@@ -27,15 +27,12 @@ st.markdown(
 )
 st.markdown(
     """
-    * Log in,
-    * Click on my results, 
+    * Log in, and click on my results, 
     * Select the courses you want to calculate the average of,
     * Click next **twice** (do not download the preview here!), 
     * Fill in your email, and select norwegian/english (both are fine), then click next
     * Click on the link sent to your email 
-    * Scroll past all your grades to the bottom
-    * where you can download the PDF
-    * Upload the pdf to this page :) 
+    * Scroll past all your grades to the bottom, then download the PDF
     """
 )
 
@@ -133,7 +130,7 @@ if uploaded_file:
 # st.markdown("If you liked this page and want to say thanks, my Vipps is 41303423 :)")
 st.markdown(
     """
-            It was originally made for NTNU transcripts. It appears to work for other universities as well, but the PDF parsing has not been tested thoroughly.
+            This page was originally made for NTNU transcripts. It appears to work for other universities as well, but the PDF parsing has not been tested thoroughly.
             If you find any issues, please send an email to gradecalculatorntnu@gmail.com
             """
 )
