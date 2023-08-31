@@ -20,7 +20,7 @@ st.markdown(
     % "https://www.vitnemalsportalen.no/"
 )
 st.markdown(
-    " The correct way to get the PDF from vitnemålsportalen is the following: "
+    " The correct way to get the PDF from vitnemålsportalen: "
 )
 st.markdown(
     """
