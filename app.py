@@ -16,7 +16,7 @@ st.markdown("This website calculates the average grade from any Vitnemålsportal
 # st.markdown("The official reciepe to calculate grades can be found at ")
 st.header("How to use")
 st.markdown(
-    "The PDF format required is the one from [vitnemålsportalen](%s)."
+    "The PDF format required is the one from [Vitnemålsportalen](%s)."
     % "https://www.vitnemalsportalen.no/"
 )
 st.markdown(
@@ -139,3 +139,6 @@ st.markdown(
     % "https://i.ntnu.no/wiki/-/wiki/Norsk/FS+-+Beregne+snittkarakter"
 )
 
+st.markdown("This page is not ")
+
+st.footer("This page is not ")
