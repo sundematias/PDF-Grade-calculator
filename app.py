@@ -16,7 +16,7 @@ st.markdown("This website calculates the average grade from any Vitnemålsportal
 # st.markdown("The official reciepe to calculate grades can be found at ")
 st.header("How to use")
 st.markdown(
-    "The PDF format required is the one from [Vitnemålsportalen](%s). *Do not use the grade preview, but the proper PDF!*"
+    "The PDF format required is from [Vitnemålsportalen](%s). *Do not use the grade preview, but the proper PDF!*"
     % "https://www.vitnemalsportalen.no/"
 )
 st.markdown(
