@@ -104,7 +104,7 @@ if uploaded_file:
         f"* Check that you have **{df.shape[0]}** courses on your original transcript"
     )
     st.markdown(
-        '* Verify that any pass/fail courses have been converted to "None" in the Grade column'
+        '* Verify that any pass/fail courses have been converted to "None" in the Number Grade column'
     )
     st.markdown("* Verify that the course credits are correct")
     st.markdown(
