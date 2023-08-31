@@ -6,9 +6,9 @@ st.markdown("""
         <style>
                .block-container {
                     padding-top: 2rem;
-                    padding-bottom: 0rem;
-                    padding-left: 2rem;
-                    padding-right: 2rem;
+                    padding-bottom: 2rem;
+                    padding-left: 1.8rem;
+                    padding-right: 1.8rem;
                 }
         </style>
         """, unsafe_allow_html=True)
@@ -131,6 +131,7 @@ if uploaded_file:
 
 # st.markdown("If you liked this page and want to say thanks, my Vipps is 41303423 :)")
 
+st.header("About")
 
 st.markdown(
     """
