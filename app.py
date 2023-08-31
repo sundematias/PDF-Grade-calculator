@@ -132,7 +132,8 @@ if uploaded_file:
 
 #st.header("About")
 # st.markdown("""---""") 
-st.divider()
+# st.divider()
+st.write('***')
 
 st.markdown(
     """
