@@ -7,7 +7,6 @@ st.title("NTNU grade calculator from PDF")
 # st.text("This is a quick website to calculate your average grade. \nIt's not difficult to do manually, but it's tedious work!")
 # st.text("The official reciepe to calculate grades can be found at ")
 
-
 st.markdown(
     """
             This is a quick website to calculate your average grade from your grade transcript PDF, so you don't have to do it by hand.
