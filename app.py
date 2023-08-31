@@ -2,8 +2,16 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-# import sklearn
-
+st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
 
 import pdfplumber
 
@@ -27,7 +35,7 @@ st.markdown(
     * Log in, and click on my results, 
     * Select the courses you want to calculate the average of
     * Click next **twice** (do not download the preview here!)
-    * Fill in your email, and select norwegian/english (both are fine), then click next
+    * Fill in your email, and select language (any language works), then click next
     * Click on the link sent to your email 
     * Scroll past all your grades to the bottom, then download the PDF
     """
