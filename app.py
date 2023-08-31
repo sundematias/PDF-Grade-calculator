@@ -7,7 +7,7 @@ import pandas as pd
 
 import pdfplumber
 
-st.title("Calculate your average grade from the Vitnemålsportalen transcript PDF!")
+st.header("Calculate your average grade from the Vitnemålsportalen transcript PDF!")
 # st.text("This is a quick website to calculate your average grade. \nIt's not difficult to do manually, but it's tedious work!")
 # st.text("The official reciepe to calculate grades can be found at ")
 
