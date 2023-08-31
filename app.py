@@ -132,7 +132,7 @@ if uploaded_file:
 
 #st.header("About")
 # st.markdown("""---""") 
-components.html("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """)
+st.divider()
 
 st.markdown(
     """
