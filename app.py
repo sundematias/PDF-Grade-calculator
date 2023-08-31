@@ -25,8 +25,8 @@ st.markdown(
 st.markdown(
     """
     * Log in, and click on my results, 
-    * Select the courses you want to calculate the average of,
-    * Click next **twice** (do not download the preview here!), 
+    * Select the courses you want to calculate the average of
+    * Click next **twice** (do not download the preview here!)
     * Fill in your email, and select norwegian/english (both are fine), then click next
     * Click on the link sent to your email 
     * Scroll past all your grades to the bottom, then download the PDF
