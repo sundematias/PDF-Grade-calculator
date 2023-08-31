@@ -33,7 +33,7 @@ st.markdown(
 )
 st.markdown(
     """
-    *Log in,
+    * Log in,
     * click on *my results*, 
     * select the courses you want to calculate the average of,
     * click next **twice** (do not download the preview here!), 
