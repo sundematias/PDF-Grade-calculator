@@ -116,7 +116,9 @@ if uploaded_file:
         200,
         hide_index=True,
     )
-    st.markdown("*Hover over the data to get a fullscreen button* \n\n")
+    st.markdown("*Hover over the data to get a fullscreen button*")
+    st.text("")
+    st.text("")
 
 
 # st.markdown("If you liked this page and want to say thanks, my Vipps is 41303423 :)")
