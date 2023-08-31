@@ -94,15 +94,8 @@ if uploaded_file:
     )
 
     st.markdown(f" ### Average grade: {avg_grade:.2f}")
-
-    st.markdown(
-        f"Your course credit weighted average grade is {avg_grade:.2f}. This is the one you report."
-    )
-
     unweighted_average = df["Number grade"].mean()
-    st.markdown(
-        f"Your unweighted average grade is {unweighted_average:.2f}. This number should not be presented as your average grade, as it's just the average of all your grades, regardless of how many credits the course gives. If all your courses are 7.5 credits, the number is identical."
-    )
+    
     st.header("Verifying your results")
     st.markdown(
         "To be sure that the results are reliable, you can check that the PDF was parsed correctly. The following dataframe was extracted from the uploaded PDF."
@@ -138,6 +131,8 @@ st.markdown(
     "NTNU's official procedure for grade calculations can be found [here](%s). When applying to master's degrees, only one decimal is used. This page calculates two decimals for convenience."
     % "https://i.ntnu.no/wiki/-/wiki/Norsk/FS+-+Beregne+snittkarakter"
 )
+st.markdown("The calculation is course credit weighted, in the same way NTNU does it.")
 
-st.markdown("This page is not affiliated with NTNU or Vitnemålsportalen. Source code is available in [github](%s) " % "https://github.com/sundematias/sundematias.github.io")
+
+st.markdown("This page is not affiliated with NTNU or Vitnemålsportalen. The source code is available on [GitHub](%s). " % "https://github.com/sundematias/sundematias.github.io")
 
