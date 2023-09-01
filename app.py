@@ -3,6 +3,13 @@ import numpy as np
 import pandas as pd
 import pdfplumber
 
+
+<meta property='og:title' content='PDF Grade Calculator'/>
+<meta property='og:image' content='preview.png'/>
+<meta property='og:description' content='PDF Grade Calculator for NTNU'/>
+<meta property='og:url' content='https://pdf-grade-calculator.streamlit.app/'/>
+
+
 st.markdown("""
         <style>
                .block-container {
