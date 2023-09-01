@@ -91,7 +91,7 @@ if uploaded_file:
             
     # We must convert the credits from 7,5 to 7.5
     course_credits_values = np.array(df["Course credits"].values)
-    st.markdown(course_credits_values)
+    # st.markdown(course_credits_values)
     # ugly, but does the job
     for i in range(len(course_credits_values)):
         course_credits_values[i] = float(
