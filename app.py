@@ -64,7 +64,7 @@ if uploaded_file:
             course_credits = words[-3]
 
             # This handles weird courses with 0 credits such as HMS0001
-            if (len(course_credits) > 3)):
+            if len(course_credits) > 3:
                 course_credits = np.nan
             if course_credits == '—':
                 course_credits = np.nan
