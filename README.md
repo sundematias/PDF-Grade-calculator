@@ -3,4 +3,4 @@ Calculating average grade by parsing a PDF, instead of doing it manually. Made f
 
 More details, as well as deployment at https://pdf-grade-calculator.streamlit.app/
 
-There is a Jupyter Notebook that you can download, if you do not want to upload your transcript.
+There is also a Jupyter Notebook that you can download, if you do not want to upload your transcript.
