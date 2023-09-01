@@ -64,10 +64,10 @@ if uploaded_file:
             course_credits = words[-3]
 
             # This handles weird courses with 0 credits such as HMS0001
-            if (len(course_credits) > 3) or (not course_credits.isnumeric()):
+            if (len(course_credits) > 3)):
                 course_credits = np.nan
-            # if not course_credits.isnumeric():
-                # course_credits = np.nan
+            if course_credits == '—':
+                course_credits = np.nan
             
             # Convert letter grades to numbers.
             if len(letter_grade) == 1:
