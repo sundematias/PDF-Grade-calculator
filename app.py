@@ -56,6 +56,7 @@ if uploaded_file:
         # Not super robust, but it works
         if (line[0:2].isalpha()) and (line[0:2].isupper()):
             words = line.split()
+            st.markdown(words)
             
             #these three lines make more sense if you print the "words" variable
             code = words[0]
