@@ -139,7 +139,7 @@ if uploaded_file:
         st.markdown("*Hover over the data to get a fullscreen button*")
         st.text("")
     except:
-        st.markdown(" **:red[An error occured.]** \nMake sure you have uploaded the correct PDF format. There could also be some edge case un your PDF that is not handled yet. Contact gradecalculatorntnu@gmail.com to report any bugs.")
+        st.markdown(" **:red[An error occured.]** \nMake sure the PDF is correctly formatted. There could also be some edge case un your PDF that is not handled yet. Contact gradecalculatorntnu@gmail.com to report any bugs.")
 
 
 #st.header("About")
