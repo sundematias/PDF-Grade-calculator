@@ -66,7 +66,9 @@ if uploaded_file:
             # This handles weird courses with 0 credits such as HMS0001
             if len(course_credits) > 3:
                 course_credits = np.nan
-
+            if not course_credits.isnumeric():
+                course_credits = np.nan
+            
             # Convert letter grades to numbers.
             if len(letter_grade) == 1:
                 grade = 70 - ord(letter_grade)  # A capital F has ASCII value 70
