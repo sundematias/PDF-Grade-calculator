@@ -66,7 +66,14 @@ if uploaded_file:
             # This handles weird courses with 0 credits such as HMS0001
             if len(course_credits) > 3:
                 course_credits = np.nan
+            
+            #duplicate courses where the second has zero credits behaves differently
             if course_credits == '—':
+                course_credits = np.nan
+            
+            def num_there(s):
+                return any(i.isdigit() for i in s)
+            if not num_there(course_credits):
                 course_credits = np.nan
             
             # Convert letter grades to numbers.
