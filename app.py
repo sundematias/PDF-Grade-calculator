@@ -24,6 +24,7 @@ st.markdown("""
 
 st.title("PDF Grade Calculator")
 st.markdown("This website calculates the average grade from any Vitnemålsportalen grade transcript PDF, so you don't have to do it by hand:)" )
+st.markdown("No information from the grade transcript is saved. The source code is available on [GitHub](%s). " % "https://github.com/sundematias/sundematias.github.io")
 
 st.header("How to use")
 st.markdown(
