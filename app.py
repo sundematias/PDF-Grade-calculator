@@ -63,6 +63,9 @@ if uploaded_file:
             letter_grade = words[-1]
             course_credits = words[-3]
 
+
+            def num_there(s):
+                return any(i.isdigit() for i in s)
             # This handles weird courses with 0 credits such as HMS0001
             if (len(course_credits) > 3) or (not num_there(course_credits)):
                 course_credits = np.nan
@@ -71,8 +74,7 @@ if uploaded_file:
             # if course_credits == '—':
             #     course_credits = np.nan
             
-            # def num_there(s):
-            #     return any(i.isdigit() for i in s)
+            
             # if not num_there(course_credits):
             #     course_credits = np.nan
             
