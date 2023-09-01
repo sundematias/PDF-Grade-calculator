@@ -6,7 +6,7 @@ import pdfplumber
 st.markdown("""
         <style>
                .block-container {
-                    padding-top: 2rem;
+                    padding-top: 4rem;
                     padding-bottom: 4rem;
                     padding-left: 1.8rem;
                     padding-right: 1.8rem;
