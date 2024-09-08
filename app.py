@@ -169,3 +169,4 @@ st.markdown(
 
 st.markdown("This page is not affiliated with NTNU or Vitnemålsportalen. The source code is available on [GitHub](%s). " % "https://github.com/sundematias/sundematias.github.io")
 
+st.markdown("Last updated: 2024-09-08")
